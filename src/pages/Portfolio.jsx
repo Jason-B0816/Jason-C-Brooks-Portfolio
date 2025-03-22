@@ -24,6 +24,13 @@ function Portfolio() {
       githubLink: "https://github.com/Jason-B0816/Always-Watching-Employee-Tracker",
       image: "/images/growtika-yGQmjh2uOTg-unsplash.jpg",
     },
+    {
+      id: 4,
+      title: "Project # 4 My Portfolio",
+      deployedLink: "https://github.com/Jason-B0816/Jason-C-Brooks-Portfolio",
+      githubLink: "https://github.com/Jason-B0816/Jason-C-Brooks-Portfolio",
+      image: "/images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg",
+    },
   ];
 
   return (

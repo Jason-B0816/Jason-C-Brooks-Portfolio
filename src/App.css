@@ -1,10 +1,47 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #007BFF;
+  --secondary-color: #f53232;
+  --header-background: #333333;
+  --header-text: rgb(240, 17, 17);
+  --footer-background: #333333;
+  --footer-text: rgb(197, 5, 5);
+  --input-background: #ffffff;
+  --input-border: #ccc;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode Variables */
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #90caf9;
+  --secondary-color: #f44336;
+  --header-background: #1f1f1f;
+  --header-text: #f44336;
+  --footer-background: #1f1f1f;
+  --footer-text: #ff8a80;
+  --input-background: #1f1f1f;
+  --input-border: #555;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Apply Global Styles Using Variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 #root {
-  max-width: 2080px;
+  max-width: 100%;
   margin: auto;
   padding: 1rem;
   text-align: center;
-  font-family: Arial, sans-serif;
-  background-image: url('/images/jake-espedido-L09OfyhIV6I-unsplash.jpg');
+  background-image: url('/images/jake-espedido-L09OfyhIV6I-unsplash.jpg'); /* Your background image */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -12,19 +49,20 @@
 
 /* Header Styles */
 header {
-  background-color: #333;
-  color: rgb(240, 17, 17);
+  background-color: var(--header-background);
+  color: var(--header-text);
   padding: 20px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 500px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 nav a {
-  color: rgb(240, 17, 17);
+  color: var(--header-text);
   text-decoration: none;
 }
 
@@ -42,8 +80,8 @@ nav a.active {
   padding: 20px;
   max-width: 100%;
   margin: auto;
-  background-color: rgb(245, 50, 50);
-  color: #333;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   border-radius: 10px;
   animation: fadeIn 1.5s ease-out forwards;
 }
@@ -67,8 +105,8 @@ nav a.active {
   padding: 20px;
   max-width: 100%;
   margin: auto;
-  font-size: 2.0rem;
-  color: #333;
+  font-size: 2rem;
+  color: var(--text-color);
   border-radius: 10px;
   background-size: cover;
   background-position: center;
@@ -78,7 +116,7 @@ nav a.active {
 
 .aboutMe-container:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 24px var(--shadow-color);
 }
 
 /* Contact Container */
@@ -86,34 +124,24 @@ nav a.active {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background: #fff;
+  background: var(--input-background);
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px var(--shadow-color);
   text-align: center;
-}
-
-/* Contact Form Styles */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form label {
-  font-weight: bold;
-  text-align: left;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-background);
   border-radius: 5px;
+  color: var(--text-color);
 }
 
 .contact-form button {
-  background-color: #007BFF;
+  background-color: var(--primary-color);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -122,54 +150,31 @@ nav a.active {
 }
 
 .contact-form button:hover {
-  background-color: #0056b3;
-}
-
-.success-message {
-  color: green;
-  font-weight: bold;
-  padding: 10px;
+  background-color: darken(var(--primary-color), 10%);
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: rgb(197, 5, 5);
+  background-color: var(--footer-background);
+  color: var(--footer-text);
   padding: 20px;
   text-align: center;
+  opacity: 0; /* Start with opacity 0 */
+  transform: translateY(50px); /* Start below the viewport */
+  animation: slideInFooter 1.5s ease-in-out forwards; /* Slide-in animation */
 }
 
-/* Scroll-to-Top Button */
-.scroll-to-top-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  padding: 10px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-  z-index: 1000;
+footer:hover {
+  transform: translateY(-5px); /* Lift slightly when hovered */
+  box-shadow: 0 8px 16px var(--shadow-color); /* Add shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.scroll-to-top-btn:hover {
-  background-color: #555;
-}
-
-.scroll-to-top-btn:focus {
-  outline: none;
-}
-
-/* Animations */
-
-/* Fade-in Animation */
-@keyframes fadeIn {
+/* Slide-in Animation for Footer */
+@keyframes slideInFooter {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -177,15 +182,24 @@ footer {
   }
 }
 
-/* Bounce Animation */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
+/* Media Queries */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  40% {
-    transform: translateY(-15px);
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  60% {
-    transform: translateY(-10px);
+
+  .aboutMe-container {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

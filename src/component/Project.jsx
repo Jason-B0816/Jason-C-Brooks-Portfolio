@@ -23,7 +23,14 @@ const projects = [
     githubLink: "http://github.com",
     image: "http://example.com/image3.jpg",
   },
+  {id: 4,
+    title: "Project 4",
+    deployedLink: "http://example.com",
+    githubLink: "http://github.com",
+    image: "http://example.com/image4.jpg",
+  },
 ];
+
 
 function Project({ title, deployedLink, githubLink, image }) {
   return (
