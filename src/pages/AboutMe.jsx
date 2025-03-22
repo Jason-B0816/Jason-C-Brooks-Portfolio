@@ -2,8 +2,9 @@ import React from 'react';
 
 function AboutMe() {
     return (
-        <div className aboutMe-container>
-         <img src="/images/profilepicture.jpg" alt="Jason Brooks" />
+        <div className = "aboutMe-container">
+         <img src="/Profilepicture.jpg" alt="Jason Brooks" />
+       
         <h1>About Me</h1>
         <p>Hello and welcome! My name is <strong>Jason C Brooks</strong>, and I’m an aspiring{" "}
                     <strong>Full Stack Web Developer</strong> with a passion for building

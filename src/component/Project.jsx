@@ -7,14 +7,14 @@ const projects = [
     title: "Project 1",
     deployedLink: "http://example.com",
     githubLink: "http://github.com",
-    image: "http://example.com/image1.jpg",
+    image: "/image1.jpg",
   },
   {
     id: 2,
     title: "Project 2",
     deployedLink: "http://example.com",
     githubLink: "http://github.com",
-    image: "http://example.com/image2.jpg",
+    image: "/image2.jpg",
   },
   {
     id: 3,
@@ -47,20 +47,6 @@ Project.propTypes = {
   image: PropTypes.string.isRequired,
 };
 
-function ProjectList() {
-  return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px", padding: "20px" }}>
-      {projects.map((project) => (
-        <Project
-          key={project.id}
-          title={project.title}
-          deployedLink={project.deployedLink}
-          githubLink={project.githubLink}
-          image={project.image}
-        />
-      ))}
-    </div>
-  );
-}
 
-export default ProjectList;
+
+export default Project;
