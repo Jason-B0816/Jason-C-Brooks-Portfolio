@@ -1,25 +1,27 @@
-// import react from "react";
-// import {Link} from "react-router-dom";
+ import react from "react"; 
+ import {Link} from "react-router-dom";
 
-function Nav() {
+const Nav = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="/">About Me</a>
-        </li>
-               <li>
-          <a href="/portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
-        </li>
-        <li>
-          <a href="/resume">Resume</a>
-        </li>
-      </ul>
-    </nav>
-  );
+    <>
+        <ul className='Nav'>
+            <li className = 'Nav-item'>
+                <Link to="/">About</Link>
+            </li>
+            <li className = 'Nav-item'>
+                <Link to="/resume">Resume</Link>
+            </li>
+            <li className = 'Nav-item'>
+                <Link to="/work">Portfolio</Link>
+            </li>
+            <li className = 'Nav-item'>
+                <Link to="/contact">Contact</Link>
+            </li>
+        </ul>
+    </>
+  )
 }
 
-export default Nav;
+export default Nav
+
+
