@@ -12,8 +12,8 @@ const Nav = () => {
                 <Link to="/resume">Resume</Link>
             </li>
             <li className = 'Nav-item'>
-                <Link to="/work">Portfolio</Link>
-            </li>
+                <Link to="/portfolio">Portfolio</Link>
+            </li>  
             <li className = 'Nav-item'>
                 <Link to="/contact">Contact</Link>
             </li>
