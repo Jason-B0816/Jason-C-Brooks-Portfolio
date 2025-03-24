@@ -136,7 +136,7 @@ npm run build
 Deploy the dist folder to your preferred hosting platform (e.g., Netlify, Vercel, GitHub Pages).
 
 # License
-This project is licensed under the MIT License 
+This project is licensed under the Apache License 
 
 # Contributions
 Feel free to submit a pull request or open an issue to suggest improvements or reports. 
