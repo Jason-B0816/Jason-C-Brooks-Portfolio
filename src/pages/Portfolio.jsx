@@ -33,14 +33,14 @@ function Portfolio() {
 },
 {
   id: 5,
-  title: "Toe Mater Builder of Vehicles",
+  title: "Project # 5 Toe Mater Builder of Vehicles",
   deployedLink: "https://github.com/Jason-B0816/Toe-Mater-Builder-of-Vehicles",
   githubLink: "https://github.com/Jason-B0816/Toe-Mater-Builder-of-Vehicles",
   image: "/images/giulia-lorenzon-frM8c6-639s-unsplash.jpg",
 },
 {
   id: 6,
-  title: "Pro README Generator CoPilot",
+  title: "Project # 6 Pro README Generator CoPilot",
   deployedLink: "https://github.com/Jason-B0816/ProReadMeCopilot",
   githubLink: "https://github.com/Jason-B0816/ProReadMeCopilot",
   image: "/images/nhn-a8BO-4VLau0-unsplash.jpg",
