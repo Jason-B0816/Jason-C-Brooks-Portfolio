@@ -30,8 +30,22 @@ function Portfolio() {
       deployedLink: "https://github.com/Jason-B0816/Jason-C-Brooks-Portfolio",
       githubLink: "https://github.com/Jason-B0816/Jason-C-Brooks-Portfolio",
       image: "/images/lee-campbell-DtDlVpy-vvQ-unsplash.jpg",
-    },
-  ];
+},
+{
+  id: 5,
+  title: "Toe Mater Builder of Vehicles",
+  deployedLink: "https://github.com/Jason-B0816/Toe-Mater-Builder-of-Vehicles",
+  githubLink: "https://github.com/Jason-B0816/Toe-Mater-Builder-of-Vehicles",
+  image: "/images/giulia-lorenzon-frM8c6-639s-unsplash.jpg",
+},
+{
+  id: 6,
+  title: "Pro README Generator CoPilot",
+  deployedLink: "https://github.com/Jason-B0816/ProReadMeCopilot",
+  githubLink: "https://github.com/Jason-B0816/ProReadMeCopilot",
+  image: "/images/nhn-a8BO-4VLau0-unsplash.jpg",
+}
+];
 
   return (
     <div>

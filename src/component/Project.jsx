@@ -29,6 +29,18 @@ const projects = [
     githubLink: "http://github.com",
     image: "http://example.com/image4.jpg",
   },
+  {id: 5,
+    title: "Project 5",
+    deployedLink: "http://example.com",
+    githubLink: "http://github.com",
+    image: "http://example.com/image5.jpg",
+  },
+  {id: 6,
+    title: "Project 6",
+    deployedLink: "http://example.com",
+    githubLink: "http://github.com",
+    image: "http://example.com/image6.jpg",
+  },
 ];
 
 
