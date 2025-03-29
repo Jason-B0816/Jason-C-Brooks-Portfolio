@@ -145,4 +145,4 @@ Feel free to submit a pull request or open an issue to suggest improvements or r
 * Email: jbrooks200800@gmail.com
 * GitHub Username Link: https://github.com/Jason-B0816
 * GitHub Repository Link: https://github.com/Jason-B0816/Jason-C-Brooks-Portfolio
-* Deployed Netlify.app Link: https://67df5f65200146143cdbdb42--rad-creponne-d0da5d.netlify.app/
+* Deployed Netlify.app Link: https://rad-creponne-d0da5d.netlify.app/
