@@ -53,7 +53,7 @@ function Portfolio() {
       id: 7,
       title: "Project # 7 (my favorite) Transcarrency",
       deployedLink: "https://transcarrency.onrender.com/",
-      githubLink: "https://githubb.com/Jason-B0816/Transcarrency",
+      githubLink: "https://github.com/Jason-B0816/Transcarrency",
       image: "/images/tclogo_transparent-BVG4_Uij.jpg",
     },
     {
